@@ -3,9 +3,9 @@ const addTodo = () => {
 	const todoItem = document.getElementById('newTodoInput').value;
 	if(todoItem) {
 		let liItem = document.createElement('li');
-		liItem.textContent = 'todoItem';
+		liItem.textContent = todoItem;
 		document.getElementById('todoList').appendChild(liItem)
 
-		document.getElementById('newTodoInput').value('')
+		document.getElementById('newTodoInput').value = ''
 	}
 }
